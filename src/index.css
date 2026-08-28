@@ -91,6 +91,10 @@ a {
   line-height: 1.5;
 }
 
+.hero--below-marquee {
+  padding-top: 0;
+}
+
 .hero-cta {
   margin-top: clamp(36px, 5vw, 60px);
   padding-bottom: 5px;
