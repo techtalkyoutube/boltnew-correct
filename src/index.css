@@ -92,12 +92,20 @@ a {
 }
 
 .marquee {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(18px, 2vw, 28px);
   margin-top: clamp(72px, 10vw, 132px);
   padding: 0 0 clamp(40px, 6vw, 72px);
   overflow: hidden;
   width: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
+}
+
+.marquee-row {
+  overflow: visible;
+  width: 100%;
 }
 
 .marquee-track {
@@ -108,6 +116,11 @@ a {
   animation: marquee-scroll 48s linear infinite;
 }
 
+.marquee-row--reverse .marquee-track {
+  animation-direction: reverse;
+  animation-duration: 56s;
+}
+
 .marquee:hover .marquee-track {
   animation-play-state: paused;
 }
@@ -116,6 +129,7 @@ a {
   position: relative;
   flex: 0 0 auto;
   width: clamp(220px, 22vw, 320px);
+  height: clamp(140px, 14vw, 200px);
   margin: 0;
   border-radius: 22px;
   overflow: hidden;
@@ -126,19 +140,10 @@ a {
 .marquee-item img {
   display: block;
   width: 100%;
-  height: clamp(140px, 14vw, 200px);
+  height: 100%;
   object-fit: cover;
   user-select: none;
   pointer-events: none;
-}
-
-.marquee-item figcaption {
-  padding: 10px 16px 14px;
-  color: #0b0b0b;
-  font-size: clamp(0.82rem, 1.1vw, 1rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  text-align: left;
 }
 
 @keyframes marquee-scroll {
