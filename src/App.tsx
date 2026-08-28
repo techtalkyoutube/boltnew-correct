@@ -51,6 +51,12 @@ function App() {
             headstart
           </a>
           <h1>Where the world&apos;s most ambitious teens gather</h1>
+          <p className="hero-subhead">We do events that connect them with the right people, the right organizations and companies.</p>
+          <p className="hero-points">
+            Making six figures at fifteen.<br />
+            Working with the biggest companies.<br />
+            Pulling all-nighters to ship something millions will use.
+          </p>
           <a className="hero-cta" href="#apply-now">
             apply now
           </a>
