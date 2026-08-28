@@ -71,14 +71,14 @@ function App() {
         ))}
       </section>
 
-      <section className="hero hero--below-marquee" aria-label="What Headstart does">
-        <div className="hero-content">
-          <p className="hero-subhead">We do events that connect them with the right people, the right organizations and companies.</p>
-          <p className="hero-points">
-            Making six figures at fifteen.<br />
-            Working with the biggest companies.<br />
-            Pulling all-nighters to ship something millions will use.
-          </p>
+      <section className="mission-section" aria-label="Headstart mission">
+        <div className="mission-content">
+          <h2>we exist to connect and empower the next generation</h2>
+          <div className="mission-copy">
+            <p>young people are building companies, creating products, and exploring ideas earlier than ever — but too often, they&apos;re doing it without a community around them.</p>
+            <p>headstarts brings ambitious young builders together through events, competitions, and a global community where they can meet peers, learn from exceptional people, and start building.</p>
+            <p>we&apos;re creating a place where the next generation doesn&apos;t have to wait to get started.</p>
+          </div>
         </div>
       </section>
     </div>
