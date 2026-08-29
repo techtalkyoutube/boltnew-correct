@@ -1,4 +1,4 @@
-const navigationItems = ['main', 'about us', 'apply now', 'houses', 'blog'];
+const navigationItems = ['main', 'about us', 'houses', 'blog'];
 
 type CountryImage = {
   src: string;
@@ -35,13 +35,16 @@ function App() {
         <nav className="navigation" aria-label="Primary navigation">
           {navigationItems.map((item) => (
             <a
-              className={item === 'apply now' ? 'navigation-link navigation-link--primary' : 'navigation-link'}
+              className="navigation-link"
               href={`#${item.replaceAll(' ', '-')}`}
               key={item}
             >
               {item}
             </a>
           ))}
+          <a className="navigation-brand" href="#main" aria-label="Headstart home">
+            headstart
+          </a>
         </nav>
       </header>
 
