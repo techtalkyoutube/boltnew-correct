@@ -47,9 +47,6 @@ function App() {
 
       <main id="main" className="hero" aria-label="Headstart landing page">
         <div className="hero-content">
-          <a className="hero-brand" href="#main" aria-label="Headstart home">
-            headstart
-          </a>
           <h1>Where the world&apos;s most ambitious teens gather</h1>
           <a className="hero-cta" href="#apply-now">
             apply now
