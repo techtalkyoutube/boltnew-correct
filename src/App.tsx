@@ -42,9 +42,6 @@ function App() {
               {item}
             </a>
           ))}
-          <a className="navigation-brand" href="#main" aria-label="Headstart home">
-            headstart
-          </a>
         </nav>
       </header>
 
